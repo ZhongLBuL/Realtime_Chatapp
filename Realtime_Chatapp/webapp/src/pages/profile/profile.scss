@@ -1,0 +1,81 @@
+.profile{
+    display: flex;
+    .profileCover{
+        height: 320px;
+        position: relative;
+    }
+    .profileRightTop{
+        .profileCoverImg{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+
+        .buttonWrapper{
+            width: 200px;
+            margin: 10px auto;
+            .changeUserInfo,.logOut{
+                border: none;
+                background-color: #b47457;
+                color: white;
+                border-radius: 5px;
+                padding: 5px 10px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                &:focus{
+                    outline: none;
+                }
+            }
+            .changeUserInfo{
+                margin-right: 30px;
+            }
+        }
+      
+
+        .profileUserImg{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 150px;
+            border: 3px solid white;
+        }
+    }
+    .profileInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .profileInfoName{
+            font-size: 24px;
+        }
+        .profileInfoDesc{
+            font-weight: 300;
+        }
+
+		.logoutButton{
+            margin-top: 10px;
+            border: none;
+            padding: 7px;
+            border-radius: 5px;
+            background-color: #b47457;
+            font-weight: 500;
+            cursor: pointer;
+            color: white;
+        }
+
+    }
+
+    .profileRight{
+        flex: 9;
+        .profileRightBottom{
+            display: flex;
+        }
+    }
+}
